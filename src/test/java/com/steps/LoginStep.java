@@ -19,18 +19,18 @@ public class LoginStep {
 	@Given("User navigates to login page {string}")
 	public void user_navigates_to_login_page(String url) throws InterruptedException {
 
-		//Mac Users
-		 WebDriverManager.safaridriver().setup();
-		 driver = new SafariDriver();
-		
-		//Firfox Window User
-		//WebDriverManager.firefoxdriver().setup();
-		//driver = new FirefoxDriver();
-		//Edge-WIndows User
+		// Mac Users
+		WebDriverManager.safaridriver().setup();
+		driver = new SafariDriver();
+
+		// Firfox Window User
+		// WebDriverManager.firefoxdriver().setup();
+		// driver = new FirefoxDriver();
+		// Edge-WIndows User
 
 		// WebDriverManager.edgedriver().setup();
 		// driver = new EdgeDriver();
-		
+
 		Thread.sleep(2000);
 		driver.manage().window().maximize();
 		driver.get(url);
